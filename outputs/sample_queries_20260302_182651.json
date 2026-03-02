@@ -1,0 +1,104 @@
+[
+    {
+        "user_question": "¿Existe horario flexible?",
+        "system_answer": "Sí. Los colaboradores pueden ingresar entre las 8:00 y las 10:00, siempre que cumplan 8 horas diarias y estén disponibles entre las 10:00 y las 16:00.",
+        "chunks_related": [
+            "HR-002: Sí. Los colaboradores pueden ingresar entre las 8:00 y las 10:00, siempre que cumplan 8 horas diarias y estén disponibles entre las 10:00 y las 16:00."
+        ],
+        "evaluacion": {
+            "relevancia": 10,
+            "fidelidad": 10,
+            "claridad": 9,
+            "justificación": "La respuesta es relevante y responde correctamente a la pregunta sobre el horario flexible. Está alineada con el contexto proporcionado. La claridad es alta, aunque podría mejorarse ligeramente la redacción para mayor fluidez."
+        }
+    },
+    {
+        "user_question": "¿Cuántos días tengo si tengo 8 años en la empresa?",
+        "system_answer": "Corresponden 21 días de vacaciones.",
+        "chunks_related": [
+            "HR-009: Hasta 5 años: 14 días. Entre 5 y 10 años: 21 días. Más de 10 años: 28 días."
+        ],
+        "evaluacion": {
+            "relevancia": 10,
+            "fidelidad": 10,
+            "claridad": 9,
+            "justificación": "La respuesta es relevante y correcta, ya que indica que 8 años en la empresa corresponden a 21 días de vacaciones, lo cual está alineado con el contexto proporcionado. La claridad es alta, aunque podría mejorarse ligeramente en la redacción."
+        }
+    },
+    {
+        "user_question": "¿de cuanto es el bono anual ?",
+        "system_answer": "No está disponible en el contexto proporcionado. El contexto indica que sí hay un bono anual sujeto a evaluación individual y resultados de la empresa, pero no especifica el monto.",
+        "chunks_related": [
+            "HR-022: Sí, hay un bono anual sujeto a evaluación individual y resultados de la empresa."
+        ],
+        "evaluacion": {
+            "relevancia": 5,
+            "fidelidad": 10,
+            "claridad": 8,
+            "justificación": "La respuesta no responde directamente a la pregunta sobre el monto del bono anual, pero está alineada con el contexto que menciona la existencia del bono. La redacción es clara, aunque podría ser más directa."
+        }
+    },
+    {
+        "user_question": "¿Puedo instalar software libre en mi laptop?",
+        "system_answer": "No, requiere aprobación de IT.",
+        "chunks_related": [
+            "HR-050: ¿Está permitido instalar software sin autorización? Respuesta: No, requiere aprobación de IT."
+        ],
+        "evaluacion": {
+            "relevancia": 8,
+            "fidelidad": 10,
+            "claridad": 9,
+            "justificación": "La respuesta es relevante ya que aborda la pregunta sobre la instalación de software, aunque podría ser más específica sobre el software libre. Está alineada con el contexto y es clara en su redacción."
+        }
+    },
+    {
+        "user_question": "¿Cuánto es el preaviso si renuncio?",
+        "system_answer": "Si la renuncia es durante el período de prueba: 15 días. Para otros casos, la información no está disponible en el contexto proporcionado.",
+        "chunks_related": [
+            "HR-052: preaviso durante el período de prueba — 15 días"
+        ],
+        "evaluacion": {
+            "relevancia": 8,
+            "fidelidad": 10,
+            "claridad": 9,
+            "justificación": "La respuesta aborda correctamente la pregunta sobre el preaviso al renunciar, aunque no proporciona información sobre otros casos, lo que afecta ligeramente la relevancia. Está alineada con el contexto y es clara en su redacción."
+        }
+    },
+    {
+        "user_question": "¿Me pagan horas extra?",
+        "system_answer": "Según la información disponible, las horas extra deben ser previamente autorizadas por el supervisor y se compensan según la legislación vigente o mediante banco de horas.",
+        "chunks_related": [
+            "HR-003: Las horas extra deben ser previamente autorizadas por el supervisor y se compensan según la legislación vigente o mediante banco de horas."
+        ],
+        "evaluacion": {
+            "relevancia": 9,
+            "fidelidad": 10,
+            "claridad": 8,
+            "justificación": "La respuesta aborda correctamente la pregunta sobre el pago de horas extra, alineándose con el contexto proporcionado. Sin embargo, podría ser más clara al especificar que la compensación depende de la autorización previa y la legislación vigente."
+        }
+    },
+    {
+        "user_question": "¿Cual es un buen framework para Python?",
+        "system_answer": "No está disponible en el contexto proporcionado.",
+        "chunks_related": [],
+        "evaluacion": {
+            "relevancia": 2,
+            "fidelidad": 1,
+            "claridad": 5,
+            "justificación": "La respuesta no aborda la pregunta sobre un buen framework para Python y no se relaciona con el contexto proporcionado, aunque es clara en su redacción."
+        }
+    },
+    {
+        "user_question": "¿Tengo seguro médico?",
+        "system_answer": "Sí, la empresa ofrece seguro médico con cobertura privada para el empleado.",
+        "chunks_related": [
+            "HR-026: Sí, cobertura privada para el empleado."
+        ],
+        "evaluacion": {
+            "relevancia": 10,
+            "fidelidad": 10,
+            "claridad": 9,
+            "justificación": "La respuesta es relevante y responde correctamente a la pregunta sobre el seguro médico. Está alineada con el contexto proporcionado y es clara, aunque podría ser más precisa al mencionar que es un seguro médico ofrecido por la empresa."
+        }
+    }
+]

@@ -126,10 +126,10 @@ def agente_evaluador(query, answer, sources):
     Devuelve SOLO un JSON válido con este formato:
 
     {{
-      "relevance": int,
-      "faithfulness": int,
-      "clarity": int,
-      "justification": "breve explicación"
+      "relevancia": int,
+      "fidelidad": int,
+      "claridad": int,
+      "justificación": "breve explicación"
     }}
     """
 
@@ -147,7 +147,7 @@ if __name__ == "__main__":
     queries = [
         "¿Existe horario flexible?",
         "¿Cuántos días tengo si tengo 8 años en la empresa?",
-        "¿de cuanto es el bono anual ?,"
+        "¿de cuanto es el bono anual ?",
         "¿Puedo instalar software libre en mi laptop?",
         "¿Cuánto es el preaviso si renuncio?",
         "¿Me pagan horas extra?",
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     ]
 
     # Consulta manual:
-    input_query = input("Ingrese la consulta (o 'ejemplos'npara consultas de ejemplo' : ")
+    input_query = input("Ingrese la consulta (o 'ejemplos' para consultas de ejemplo' : ")
     if input_query and input_query.lower() != "ejemplos":
         result = rag_query(input_query)
         # Evaluacion de la respuesta
@@ -192,3 +192,10 @@ if __name__ == "__main__":
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(generated_json, f, ensure_ascii=False, indent=4)
         print(f"JSON generado y grabado en {filename}")
+
+"""
+      "relevance": int,
+      "faithfulness": int,
+      "clarity": int,
+      "justification": "breve explicación"
+"""
