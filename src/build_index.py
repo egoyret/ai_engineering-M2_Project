@@ -26,6 +26,11 @@ MODEL_NAME = "all-MiniLM-L6-v2"
 
 
 def inicializar_chroma():
+    """
+    Retorna un objecto collection que tiene definido el modelo de embedding a utilizar y el
+    directorio de persistencia para el vector store.
+    """
+    # Usamos 'dense embeddings' de Hugging Face a traves del wrapper que provve Chroma
     embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
         model_name=MODEL_NAME)
 

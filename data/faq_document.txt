@@ -1,0 +1,359 @@
+DOCUMENT_ID: HR-001
+CATEGORY: Jornada
+Pregunta: ¿Cuál es la jornada laboral estándar?
+Respuesta: La jornada laboral estándar es de lunes a viernes de 9:00 a 18:00 horas, incluyendo una hora de almuerzo no remunerada.
+
+---
+DOCUMENT_ID: HR-002
+CATEGORY: Jornada
+Pregunta: ¿Existe horario flexible?
+Respuesta: Sí. Los colaboradores pueden ingresar entre las 8:00 y las 10:00, siempre que cumplan 8 horas diarias y estén disponibles entre las 10:00 y las 16:00.
+
+---
+DOCUMENT_ID: HR-003
+CATEGORY: Jornada
+Pregunta: ¿Se permiten horas extra?
+Respuesta: Las horas extra deben ser previamente autorizadas por el supervisor y se compensan según la legislación vigente o mediante banco de horas.
+
+---
+DOCUMENT_ID: HR-004
+CATEGORY: Jornada
+Pregunta: ¿Cómo se registran las horas trabajadas?
+Respuesta: Las horas se registran diariamente en el sistema interno antes de las 20:00 hs.
+
+---
+DOCUMENT_ID: HR-005
+CATEGORY: Jornada
+Pregunta: ¿Qué sucede si olvido registrar mi jornada?
+Respuesta: El colaborador debe informar a su supervisor y solicitar una regularización en el sistema dentro de las 48 horas.
+
+---
+DOCUMENT_ID: HR-006
+CATEGORY: Jornada
+Pregunta: ¿Existe modalidad de trabajo remoto?
+Respuesta: Sí. La empresa ofrece modalidad híbrida con mínimo dos días presenciales por semana.
+
+---
+DOCUMENT_ID: HR-007
+CATEGORY: Jornada
+Pregunta: ¿Puede una posición ser 100% remota?
+Respuesta: Algunas posiciones pueden ser completamente remotas según decisión del área y aprobación de Dirección.
+
+---
+DOCUMENT_ID: HR-008
+CATEGORY: Jornada
+Pregunta: ¿Se puede modificar el esquema híbrido?
+Respuesta: El esquema puede modificarse por necesidades del negocio, notificando con 30 días de anticipación.
+
+---
+DOCUMENT_ID: HR-009
+CATEGORY: Vacaciones
+Pregunta: ¿Cuántos días de vacaciones corresponden?
+Respuesta: Hasta 5 años: 14 días. Entre 5 y 10 años: 21 días. Más de 10 años: 28 días.
+
+---
+DOCUMENT_ID: HR-010
+CATEGORY: Vacaciones
+Pregunta: ¿Cómo se solicitan las vacaciones?
+Respuesta: Deben solicitarse con al menos 30 días de anticipación mediante el portal interno.
+
+---
+DOCUMENT_ID: HR-011
+CATEGORY: Vacaciones
+Pregunta: ¿Se pueden fraccionar las vacaciones?
+Respuesta: Sí, en máximo dos períodos, uno de al menos 7 días corridos.
+
+---
+DOCUMENT_ID: HR-012
+CATEGORY: Vacaciones
+Pregunta: ¿Se pueden acumular vacaciones?
+Respuesta: Solo pueden acumularse por un año adicional con aprobación de RRHH.
+
+---
+DOCUMENT_ID: HR-013
+CATEGORY: Vacaciones
+Pregunta: ¿Qué sucede con vacaciones no gozadas?
+Respuesta: Se liquidan proporcionalmente en la liquidación final.
+
+---
+DOCUMENT_ID: HR-014
+CATEGORY: Vacaciones
+Pregunta: ¿Puedo cancelar vacaciones ya aprobadas?
+Respuesta: Sí, con acuerdo del supervisor y siempre que no afecte la planificación del equipo.
+
+---
+DOCUMENT_ID: HR-015
+CATEGORY: Licencias
+Pregunta: ¿Qué licencia corresponde por matrimonio?
+Respuesta: Corresponden 10 días corridos.
+
+---
+DOCUMENT_ID: HR-016
+CATEGORY: Licencias
+Pregunta: ¿Qué licencia corresponde por fallecimiento de familiar?
+Respuesta: 3 días corridos para familiar directo.
+
+---
+DOCUMENT_ID: HR-017
+CATEGORY: Licencias
+Pregunta: ¿Existe licencia por estudio?
+Respuesta: Sí, hasta 10 días por año calendario.
+
+---
+DOCUMENT_ID: HR-018
+CATEGORY: Licencias
+Pregunta: ¿La empresa otorga licencia por maternidad?
+Respuesta: Sí, conforme a la legislación vigente.
+
+---
+DOCUMENT_ID: HR-019
+CATEGORY: Licencias
+Pregunta: ¿Existe licencia por paternidad?
+Respuesta: Sí, según lo establecido por la ley aplicable.
+
+---
+DOCUMENT_ID: HR-020
+CATEGORY: Licencias
+Pregunta: ¿Se puede solicitar licencia sin goce de sueldo?
+Respuesta: Sí, con aprobación de RRHH y Dirección.
+
+---
+DOCUMENT_ID: HR-021
+CATEGORY: Compensaciones
+Pregunta: ¿Cuándo se paga el salario?
+Respuesta: El último día hábil de cada mes mediante depósito bancario.
+
+---
+DOCUMENT_ID: HR-022
+CATEGORY: Compensaciones
+Pregunta: ¿Existen bonos por desempeño?
+Respuesta: Sí, hay un bono anual sujeto a evaluación individual y resultados de la empresa.
+
+---
+DOCUMENT_ID: HR-023
+CATEGORY: Compensaciones
+Pregunta: ¿Hay revisiones salariales?
+Respuesta: Se realizan en marzo de cada año.
+
+---
+DOCUMENT_ID: HR-024
+CATEGORY: Compensaciones
+Pregunta: ¿Se pagan viáticos?
+Respuesta: Sí, contra presentación de comprobantes aprobados.
+
+---
+DOCUMENT_ID: HR-025
+CATEGORY: Compensaciones
+Pregunta: ¿Cómo se calculan los descuentos?
+Respuesta: Según normativa legal y políticas internas.
+
+---
+DOCUMENT_ID: HR-026
+CATEGORY: Beneficios
+Pregunta: ¿La empresa ofrece seguro médico?
+Respuesta: Sí, cobertura privada para el empleado.
+
+---
+DOCUMENT_ID: HR-027
+CATEGORY: Beneficios
+Pregunta: ¿Existe día libre por cumpleaños?
+Respuesta: Sí, puede tomarse durante el mes de cumpleaños.
+
+---
+DOCUMENT_ID: HR-028
+CATEGORY: Beneficios
+Pregunta: ¿Hay reintegro de gimnasio?
+Respuesta: Sí, reintegro parcial mensual con comprobante.
+
+---
+DOCUMENT_ID: HR-029
+CATEGORY: Beneficios
+Pregunta: ¿Se ofrecen capacitaciones?
+Respuesta: Cada empleado dispone de un presupuesto anual de USD 1.000.
+
+---
+DOCUMENT_ID: HR-030
+CATEGORY: Beneficios
+Pregunta: ¿La empresa provee equipamiento?
+Respuesta: Sí, laptop y herramientas necesarias para el puesto.
+
+---
+DOCUMENT_ID: HR-031
+CATEGORY: Evaluación
+Pregunta: ¿Cómo funciona la evaluación de desempeño?
+Respuesta: Es anual y considera objetivos, competencias técnicas y habilidades blandas.
+
+---
+DOCUMENT_ID: HR-032
+CATEGORY: Evaluación
+Pregunta: ¿Qué es un PIP?
+Respuesta: Es un Plan de Mejora de Desempeño con objetivos y seguimiento trimestral.
+
+---
+DOCUMENT_ID: HR-033
+CATEGORY: Evaluación
+Pregunta: ¿Quién realiza la evaluación?
+Respuesta: El supervisor directo junto con RRHH.
+
+---
+DOCUMENT_ID: HR-034
+CATEGORY: Evaluación
+Pregunta: ¿La evaluación impacta en el salario?
+Respuesta: Sí, puede impactar en bonos y ajustes por mérito.
+
+---
+DOCUMENT_ID: HR-035
+CATEGORY: Evaluación
+Pregunta: ¿Se pueden apelar resultados?
+Respuesta: Sí, mediante revisión formal con RRHH.
+
+---
+DOCUMENT_ID: HR-036
+CATEGORY: Conducta
+Pregunta: ¿Existe código de ética?
+Respuesta: Sí, obligatorio para todos los empleados.
+
+---
+DOCUMENT_ID: HR-037
+CATEGORY: Conducta
+Pregunta: ¿Cómo se denuncian conductas inapropiadas?
+Respuesta: A través del canal confidencial en la intranet.
+
+---
+DOCUMENT_ID: HR-038
+CATEGORY: Conducta
+Pregunta: ¿La empresa tiene política anti-discriminación?
+Respuesta: Sí, se prohíbe cualquier forma de discriminación.
+
+---
+DOCUMENT_ID: HR-039
+CATEGORY: Conducta
+Pregunta: ¿Se permite conflicto de intereses?
+Respuesta: No. Debe declararse cualquier posible conflicto.
+
+---
+DOCUMENT_ID: HR-040
+CATEGORY: Conducta
+Pregunta: ¿Está permitido aceptar regalos de proveedores?
+Respuesta: Solo regalos simbólicos de bajo valor.
+
+---
+DOCUMENT_ID: HR-041
+CATEGORY: Desarrollo
+Pregunta: ¿Se puede cambiar de puesto interno?
+Respuesta: Sí, mediante postulación a vacantes internas.
+
+---
+DOCUMENT_ID: HR-042
+CATEGORY: Desarrollo
+Pregunta: ¿Hay plan de carrera?
+Respuesta: Sí, definido junto al supervisor en reuniones anuales.
+
+---
+DOCUMENT_ID: HR-043
+CATEGORY: Desarrollo
+Pregunta: ¿Se financian certificaciones?
+Respuesta: Sí, dentro del presupuesto de capacitación.
+
+---
+DOCUMENT_ID: HR-044
+CATEGORY: Desarrollo
+Pregunta: ¿Existen mentorías internas?
+Respuesta: Sí, programa voluntario anual.
+
+---
+DOCUMENT_ID: HR-045
+CATEGORY: Desarrollo
+Pregunta: ¿Se realizan encuestas de clima laboral?
+Respuesta: Sí, al menos una vez al año.
+
+---
+DOCUMENT_ID: HR-046
+CATEGORY: Seguridad
+Pregunta: ¿Existen políticas de seguridad informática?
+Respuesta: Sí, todos deben cumplir políticas de uso aceptable.
+
+---
+DOCUMENT_ID: HR-047
+CATEGORY: Seguridad
+Pregunta: ¿Se permite uso personal del correo corporativo?
+Respuesta: Solo uso ocasional y razonable.
+
+---
+DOCUMENT_ID: HR-048
+CATEGORY: Seguridad
+Pregunta: ¿Qué hacer ante un incidente de seguridad?
+Respuesta: Reportarlo inmediatamente al área de IT.
+
+---
+DOCUMENT_ID: HR-049
+CATEGORY: Seguridad
+Pregunta: ¿Se realizan capacitaciones en ciberseguridad?
+Respuesta: Sí, obligatorias una vez por año.
+
+---
+DOCUMENT_ID: HR-050
+CATEGORY: Seguridad
+Pregunta: ¿Está permitido instalar software sin autorización?
+Respuesta: No, requiere aprobación de IT.
+
+---
+DOCUMENT_ID: HR-051
+CATEGORY: Terminación
+Pregunta: ¿Cuál es el período de prueba?
+Respuesta: 3 meses desde el inicio de la relación laboral.
+
+---
+DOCUMENT_ID: HR-052
+CATEGORY: Terminación
+Pregunta: ¿Cuál es el preaviso durante el período de prueba?
+Respuesta: 15 días.
+
+---
+DOCUMENT_ID: HR-053
+CATEGORY: Terminación
+Pregunta: ¿Cuál es el preaviso luego del período de prueba?
+Respuesta: 30 días.
+
+---
+DOCUMENT_ID: HR-054
+CATEGORY: Terminación
+Pregunta: ¿Cómo se calcula la liquidación final?
+Respuesta: Incluye salario pendiente, vacaciones proporcionales y otros conceptos legales.
+
+---
+DOCUMENT_ID: HR-055
+CATEGORY: Terminación
+Pregunta: ¿Debe devolverse el equipamiento?
+Respuesta: Sí, todo equipamiento debe devolverse antes de la desvinculación efectiva.
+
+---
+DOCUMENT_ID: HR-056
+CATEGORY: General
+Pregunta: ¿Dónde están publicadas las políticas internas?
+Respuesta: En la intranet corporativa sección RRHH.
+
+---
+DOCUMENT_ID: HR-057
+CATEGORY: General
+Pregunta: ¿Quién actualiza las políticas?
+Respuesta: El área de Recursos Humanos.
+
+---
+DOCUMENT_ID: HR-058
+CATEGORY: General
+Pregunta: ¿Cada cuánto se revisan las políticas?
+Respuesta: Al menos una vez al año.
+
+---
+DOCUMENT_ID: HR-059
+CATEGORY: General
+Pregunta: ¿Las políticas aplican a contratistas?
+Respuesta: Solo aquellas expresamente indicadas en su contrato.
+
+---
+DOCUMENT_ID: HR-060
+CATEGORY: General
+Pregunta: ¿Cómo se notifican cambios en políticas?
+Respuesta: Mediante correo corporativo y publicación en la intranet.
+---

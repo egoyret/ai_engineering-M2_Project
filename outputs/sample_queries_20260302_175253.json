@@ -1,0 +1,78 @@
+[
+    {
+        "user_question": "¿Existe horario flexible?",
+        "system_answer": "Sí. Los colaboradores pueden ingresar entre las 8:00 y las 10:00, siempre que cumplan 8 horas diarias y estén disponibles entre las 10:00 y las 16:00.",
+        "chunks_related": [
+            "HR-002: Sí. Los colaboradores pueden ingresar entre las 8:00 y las 10:00, siempre que cumplan 8 horas diarias y estén disponibles entre las 10:00 y las 16:00."
+        ],
+        "evaluacion": {
+            "relevance": 10,
+            "faithfulness": 10,
+            "clarity": 9,
+            "justification": "La respuesta es relevante y responde correctamente a la pregunta sobre el horario flexible. Está alineada con el contexto proporcionado. Sin embargo, la redacción podría ser ligeramente más clara al especificar que el horario flexible se refiere a la entrada y no a la disponibilidad total."
+        }
+    },
+    {
+        "user_question": "¿Cuántos días tengo si tengo 8 años en la empresa?",
+        "system_answer": "21 días de vacaciones.",
+        "chunks_related": [
+            "HR-009: Hasta 5 años: 14 días. Entre 5 y 10 años: 21 días. Más de 10 años: 28 días."
+        ],
+        "evaluacion": {
+            "relevance": 10,
+            "faithfulness": 10,
+            "clarity": 9,
+            "justification": "La respuesta es correcta y responde a la pregunta sobre los días de vacaciones para alguien que tiene 8 años en la empresa, alineándose perfectamente con el contexto proporcionado. La claridad es alta, aunque podría ser más explícita al mencionar que se refiere a días de vacaciones."
+        }
+    },
+    {
+        "user_question": "¿de cuanto es el bono anual ?,¿Puedo instalar software libre en mi laptop?",
+        "system_answer": "Información sobre el bono anual: no disponible en el contexto proporcionado. Sobre instalar software en la laptop: No, no está permitido instalar software sin autorización; requiere aprobación de IT.",
+        "chunks_related": [
+            "HR-050: DOCUMENT_ID: HR-050 CATEGORY: Seguridad Pregunta: ¿Está permitido instalar software sin autorización? Respuesta: No, requiere aprobación de IT."
+        ],
+        "evaluacion": {
+            "relevance": 5,
+            "faithfulness": 10,
+            "clarity": 7,
+            "justification": "La respuesta aborda correctamente la pregunta sobre la instalación de software, pero no proporciona información sobre el bono anual, lo que afecta su relevancia. La respuesta es fiel al contexto, pero podría ser más clara al separar las dos preguntas."
+        }
+    },
+    {
+        "user_question": "¿Cuánto es el preaviso si renuncio?",
+        "system_answer": "La información disponible indica que durante el período de prueba el preaviso es de 15 días. No hay información en el contexto sobre el preaviso al renunciar fuera del período de prueba.",
+        "chunks_related": [
+            "HR-052: ¿Cuál es el preaviso durante el período de prueba? Respuesta: 15 días."
+        ],
+        "evaluacion": {
+            "relevance": 5,
+            "faithfulness": 10,
+            "clarity": 7,
+            "justification": "La respuesta aborda el preaviso durante el período de prueba, pero no responde a la pregunta sobre el preaviso al renunciar fuera de este período, lo que afecta su relevancia. La fidelidad es alta ya que se alinea con el contexto proporcionado. La claridad es aceptable, aunque podría ser más precisa en su redacción."
+        }
+    },
+    {
+        "user_question": "¿Me pagan horas extra?",
+        "system_answer": "Las horas extra deben ser previamente autorizadas por el supervisor y se compensan según la legislación vigente o mediante banco de horas.",
+        "chunks_related": [
+            "HR-003: Las horas extra deben ser previamente autorizadas por el supervisor y se compensan según la legislación vigente o mediante banco de horas."
+        ],
+        "evaluacion": {
+            "relevance": 10,
+            "faithfulness": 10,
+            "clarity": 9,
+            "justification": "La respuesta aborda directamente la pregunta sobre el pago de horas extra, está alineada con el contexto proporcionado y es clara, aunque podría ser más explícita en cuanto a los detalles de la compensación."
+        }
+    },
+    {
+        "user_question": "¿Cual es un buen framework para Python?",
+        "system_answer": "La información sobre frameworks para Python no está disponible en el contexto proporcionado.",
+        "chunks_related": [],
+        "evaluacion": {
+            "relevance": 2,
+            "faithfulness": 1,
+            "clarity": 5,
+            "justification": "La respuesta no aborda la pregunta sobre frameworks para Python y no proporciona información útil, aunque está redactada de manera clara."
+        }
+    }
+]

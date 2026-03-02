@@ -1,30 +1,33 @@
 import chromadb
 from openai import OpenAI
 from dotenv import load_dotenv
-from build_index import COLLECTION_NAME, PERSIST_DIR
+from build_index import COLLECTION_NAME, PERSIST_DIR, PROJECT_ROOT
 import json
 import warnings
 from transformers import logging as tf_logging
+from datetime import datetime
 
 # Suppress non-critical warnings
 tf_logging.set_verbosity_error()
 warnings.filterwarnings("ignore")
 
-load_dotenv()
+load_dotenv() # Carga variable de entorno (api keys, etc)
 
+OUTPUT_FILE = PROJECT_ROOT / "outputs" / "sample_queries"
 
 # Inicializo el LLM que voy a usar para la RAG query
-client_llm = OpenAI()  # Usa el modelo default de .env
+client_llm = OpenAI()  # Usa la api key de .env
+model_llm = "gpt-5-mini"  # Modelo a usar para la RAG query
 
 
-# Capturo el cliente de chroma que se creo en el directorio de persistencia
+# Capturo el cliente de chroma que se creó en el directorio de persistencia
 client = chromadb.PersistentClient(path=str(PERSIST_DIR))
 
 # Usa la collection (vector store) que se creó en el build_index.py
 try:
     collection_store = client.get_collection(
         name=COLLECTION_NAME)
-    print(f"[DEBUG] Se encontró la collection con {collection_store.count()} documentos")
+    # print(f"[DEBUG] Se encontró la collection con {collection_store.count()} documentos")
 except Exception as e:
     print(f"Error: No pudo encontrar la collection '{COLLECTION_NAME}'. Asegurarse de que build_index.py se haya ejecutado antes.")
     print(f"Detalles: {e}")
@@ -43,15 +46,13 @@ Reglas obligatorias:
       "user_question": "{user_question}",
       "system_answer": "tu respuesta aquí",
       "chunks_related": ["id y texto de los fragmentos usados. Ejemplo: HR-002: horario flexible"]
-      "semantics_scores": [0.1, 0.2, 0.3, 0.4, 0.5],
-      "confidence_score": 0.8
     }}
 
 """
 
 def rag_query(user_question):
     top_k = 3
-    # Retrieval
+    # Retrieval de los chunks relacionados con la pregunta
     results = collection_store.query(
         query_texts=[user_question],
         n_results=top_k
@@ -59,15 +60,14 @@ def rag_query(user_question):
 
     retrieved_docs = results["documents"][0]
     retrieved_ids = results["ids"][0]
-    distances = results["distances"][0]
 
-    # Convertimos distancia en similitud
-    similarities = [round(1 - d, 4) for d in distances]
+    # print(f"[DEBUG] Question: {user_question} \n Retrieved {len(retrieved_docs)} chunks from the collection")
 
-    # Construimos contexto
+    # Construimos contexto pasandole los chunks recuperados
     context_block = ""
     for idx, doc in enumerate(retrieved_docs):
         context_block += f"\n[CHUNK {idx+1} | ID: {retrieved_ids[idx]}]\n{doc}\n"
+        # print(f"[DEBUG]\n[CHUNK {idx+1} | ID: {retrieved_ids[idx]}]\n{doc}\n")
 
     # Prompt final
     user_prompt = f"""
@@ -82,12 +82,12 @@ Recuerda devolver SOLO JSON válido.
 
     # LLM call
     response = client_llm.chat.completions.create(
-        model="gpt-4o-mini",
+        model=model_llm,
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt}
         ],
-        temperature=0
+        temperature=None
     )
 
     raw_output = response.choices[0].message.content
@@ -99,24 +99,96 @@ Recuerda devolver SOLO JSON válido.
         parsed = {
             "user_question": user_question,
             "system_answer": "Error: salida no válida del modelo.",
-            "chunks_related": retrieved_ids,
-            "semantic_scores": similarities,
-            "confidence_score": 0.0
+            "chunks_related": retrieved_ids
         }
 
     return parsed
 
+def agente_evaluador(query, answer, sources):
+    prompt = f"""
+    Eres un evaluador experto en sistemas RAG.
+
+    Pregunta del usuario:
+    {query}
+
+    Respuesta generada:
+    {answer}
+
+    Contexto recuperado:
+    {sources}
+
+    Evalúa del 1 al 10:
+
+    1. Relevancia (¿responde correctamente a la pregunta?)
+    2. Fidelidad (¿está alineada con el contexto?)
+    3. Claridad (¿es clara y bien redactada?)
+
+    Devuelve SOLO un JSON válido con este formato:
+
+    {{
+      "relevance": int,
+      "faithfulness": int,
+      "clarity": int,
+      "justification": "breve explicación"
+    }}
+    """
+
+    response = client_llm.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0
+    )
+
+    return json.loads(response.choices[0].message.content)
+
 if __name__ == "__main__":
 
+    # Aqui algunos queries de ejemplo:
     queries = [
         "¿Existe horario flexible?",
         "¿Cuántos días tengo si tengo 8 años en la empresa?",
-        # "¿Puedo instalar software libre en mi laptop?",
-        # "¿Cuánto es el preaviso si renuncio?",
-        # "¿Me pagan horas extra?"
+        "¿de cuanto es el bono anual ?,"
+        "¿Puedo instalar software libre en mi laptop?",
+        "¿Cuánto es el preaviso si renuncio?",
+        "¿Me pagan horas extra?",
+        "¿Cual es un buen framework para Python?",
+        "¿Tengo seguro médico?"
     ]
 
-    for q in queries:
-        result = rag_query(q)
+    # Consulta manual:
+    input_query = input("Ingrese la consulta (o 'ejemplos'npara consultas de ejemplo' : ")
+    if input_query and input_query.lower() != "ejemplos":
+        result = rag_query(input_query)
+        # Evaluacion de la respuesta
+        evaluacion = agente_evaluador(result["user_question"],
+                                      result["system_answer"],
+                                      result["chunks_related"])
+        result["evaluacion"] = evaluacion
+        print("\n" + "***Resultado consulta manual ingresada***" + "\n")
         print(json.dumps(result, indent=2, ensure_ascii=False))
-        print("\n" + "="*70 + "\n")
+        print("\n" + "=" * 70 + "\n")
+
+
+    # Consultas de ejemplo (queda grabado el json de respuesta)
+    generated_json = []
+    if input_query.lower() == "ejemplos":
+        for q in queries:
+            result = rag_query(q)
+            # Evaluacion de la respuesta
+            evaluacion = agente_evaluador(result["user_question"],
+                                          result["system_answer"],
+                                          result["chunks_related"])
+            result["evaluacion"] = evaluacion
+            generated_json.append(result)
+
+            # print(json.dumps(result, indent=2, ensure_ascii=False))
+            # print("\n" + "="*70 + "\n")
+
+    if generated_json:
+        # ====== Nombre de archivo con timestamp ======
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"{OUTPUT_FILE}_{timestamp}.json"
+        # Grabamos el JSON en un archivo
+        with open(filename, "w", encoding="utf-8") as f:
+            json.dump(generated_json, f, ensure_ascii=False, indent=4)
+        print(f"JSON generado y grabado en {filename}")
